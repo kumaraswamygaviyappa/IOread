@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="SystemTest" Id="{62fb5ba1-c269-41db-82c7-d3069fec3701}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK SystemTest
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF IO.g_ReadIO THEN
+	IO.g_ReadIO := FALSE;
+ELSE
+	IO.g_ReadIO := TRUE;
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="SystemTest">
+      <LineId Id="9" Count="0" />
+      <LineId Id="12" Count="0" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="11" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

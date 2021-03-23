@@ -1,0 +1,24 @@
+2021-03-22 16:51:05.024 +01:00 [INF] Opening solution: C:\KumaraswamyGaviyappa\GoogleDrive\Haenchen\MyTwinCATprojects\Inxton\IOread\IORead.sln
+2021-03-22 16:51:05.424 +01:00 [INF] Building project 'IORead.IORead'
+2021-03-22 16:51:05.427 +01:00 [INF] Installing project libraries into project 'IORead'
+2021-03-22 16:51:05.921 +01:00 [INF] Updating project IORead.IORead
+2021-03-22 17:05:37.587 +01:00 [INF] Opening solution: C:\KumaraswamyGaviyappa\GoogleDrive\Haenchen\MyTwinCATprojects\Inxton\IOread\IORead.sln
+2021-03-22 17:05:39.153 +01:00 [INF] Building project 'IORead.IORead'
+2021-03-22 17:05:39.155 +01:00 [INF] Installing project libraries into project 'IORead'
+2021-03-22 17:05:39.736 +01:00 [INF] Updating project IORead.IORead
+2021-03-22 17:14:03.776 +01:00 [INF] Opening solution: C:\KumaraswamyGaviyappa\GoogleDrive\Haenchen\MyTwinCATprojects\Inxton\IOread\IORead.sln
+2021-03-22 17:14:04.255 +01:00 [INF] Building project 'IORead.IORead'
+2021-03-22 17:14:04.257 +01:00 [INF] Installing project libraries into project 'IORead'
+2021-03-22 17:14:04.759 +01:00 [INF] Updating project IORead.IORead
+2021-03-22 17:15:43.706 +01:00 [INF] Opening solution: C:\KumaraswamyGaviyappa\GoogleDrive\Haenchen\MyTwinCATprojects\Inxton\IOread\IORead.sln
+2021-03-22 17:15:44.193 +01:00 [INF] Building project 'IORead.IORead'
+2021-03-22 17:15:44.196 +01:00 [INF] Installing project libraries into project 'IORead'
+2021-03-22 17:15:44.529 +01:00 [INF] Updating project IORead.IORead
+2021-03-23 09:42:43.940 +01:00 [INF] Opening solution: C:\KumaraswamyGaviyappa\GoogleDrive\Haenchen\MyTwinCATprojects\Inxton\IOread\IORead.sln
+2021-03-23 09:42:44.282 +01:00 [INF] Building project 'IORead.IORead'
+2021-03-23 09:42:44.284 +01:00 [INF] Installing project libraries into project 'IORead'
+2021-03-23 09:42:44.780 +01:00 [INF] Updating project IORead.IORead
+2021-03-23 09:45:12.071 +01:00 [INF] Opening solution: C:\KumaraswamyGaviyappa\GoogleDrive\Haenchen\MyTwinCATprojects\Inxton\IOread\IORead.sln
+2021-03-23 09:45:12.439 +01:00 [INF] Building project 'IORead.IORead'
+2021-03-23 09:45:12.441 +01:00 [INF] Installing project libraries into project 'IORead'
+2021-03-23 09:45:12.741 +01:00 [INF] Updating project IORead.IORead

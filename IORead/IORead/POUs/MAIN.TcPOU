@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="MAIN" Id="{e10f5808-78da-4366-9b27-b0c1d74ac72a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	MainReadIO : StReadIO;
+	FB_SystemTest : SystemTest;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[FB_SystemTest();
+
+MainReadIO.st_ReadIO := IO.g_ReadIO;
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="10" Count="1" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="8" Count="0" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

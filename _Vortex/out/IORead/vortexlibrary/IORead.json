@@ -1,0 +1,30 @@
+{
+  "Types": [
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "SystemTest",
+      "Namespace": "IORead",
+      "TypeMetaInfo": 4
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "StReadIO",
+      "Namespace": "IORead",
+      "TypeMetaInfo": 1
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "IO",
+      "Namespace": "IORead",
+      "TypeMetaInfo": 0
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "MAIN",
+      "Namespace": "IORead",
+      "TypeMetaInfo": 3
+    }
+  ],
+  "Name": "IORead",
+  "Namespace": "IORead"
+}
