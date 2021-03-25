@@ -22,3 +22,7 @@
 2021-03-23 09:45:12.439 +01:00 [INF] Building project 'IORead.IORead'
 2021-03-23 09:45:12.441 +01:00 [INF] Installing project libraries into project 'IORead'
 2021-03-23 09:45:12.741 +01:00 [INF] Updating project IORead.IORead
+2021-03-25 09:25:16.287 +01:00 [INF] Opening solution: C:\KumaraswamyGaviyappa\GoogleDrive\Haenchen\MyTwinCATprojects\Inxton\IOread\IORead.sln
+2021-03-25 09:25:16.659 +01:00 [INF] Building project 'IORead.IORead'
+2021-03-25 09:25:16.661 +01:00 [INF] Installing project libraries into project 'IORead'
+2021-03-25 09:25:17.359 +01:00 [INF] Updating project IORead.IORead

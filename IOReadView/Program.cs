@@ -10,13 +10,14 @@ namespace IOReadView
 {
     class Program
     {
-
         private static void OutputDataToConsole(object o)
         {
             var IOData = IORead.Entry.IOReadPlc.MAIN.MainReadIO;
 
             Console.WriteLine("Time: " + DateTime.Now.ToString() + " | " +
                 IOData.st_ReadIO.AttributeName + ": " + IOData.st_ReadIO.Cyclic.ToString() );
+
+            Entry.IOReadPlc.IO.g_ReadIO.Cyclic ^= true;
         }
         static void Main(string[] args)
         {

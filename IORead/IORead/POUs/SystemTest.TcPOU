@@ -10,11 +10,11 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF IO.g_ReadIO THEN
-	IO.g_ReadIO := FALSE;
-ELSE
-	IO.g_ReadIO := TRUE;
-END_IF]]></ST>
+      <ST><![CDATA[//IF IO.g_ReadIO THEN
+//	IO.g_ReadIO := FALSE;
+//ELSE
+//	IO.g_ReadIO := TRUE;
+//END_IF]]></ST>
     </Implementation>
     <LineIds Name="SystemTest">
       <LineId Id="9" Count="0" />
