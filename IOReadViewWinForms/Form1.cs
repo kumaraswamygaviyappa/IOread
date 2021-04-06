@@ -16,24 +16,39 @@ namespace IOReadViewWinForms
         public IOSatus()
         {
             InitializeComponent();
-            this.bStart.Click += new EventHandler(ButtonOk_Click);
+            //this.bStart.Click += new EventHandler(ButtonOk_Click);
+            Timer t = new Timer() { Interval = 250 };
+            t.Tick += T_Tick;
+            t.Start();
         }
 
         private void T_Tick(object sender, EventArgs e)
         {
             var IOData = Entry.IOReadPlc.MAIN.MainReadIO;
             
-            Entry.IOReadPlc.IO.g_ReadIO.Cyclic ^= true;
+            Entry.IOReadPlc.IO.g_ReadIO.Cyclic = bool.Parse(this.cbinput.Text); 
             this.lbIO_Status.Text = IOData.st_ReadIO.AttributeName;
             this.tbIO_Status.Text = IOData.st_ReadIO.Cyclic.ToString();
+
+            this.tbIO_Status.Text = Entry.IOReadPlc.IO.g_ReadIO.Cyclic.ToString();
         }
 
-        void ButtonOk_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("clicked");
-            Timer t = new Timer() { Interval = 250 };
-            t.Tick += T_Tick;
-            t.Start();
+
         }
+
+        private void lbIO_Status_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //void ButtonOk_Click(object sender, EventArgs e)
+        //{
+        //    //MessageBox.Show("clicked");
+        //    Timer t = new Timer() { Interval = 250 };
+        //    t.Tick += T_Tick;
+        //    t.Start();
+        //}
     }    
 }
