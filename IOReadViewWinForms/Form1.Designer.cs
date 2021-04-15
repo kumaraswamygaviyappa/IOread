@@ -32,6 +32,7 @@
             this.tbIO_Status = new System.Windows.Forms.TextBox();
             this.lboutput = new System.Windows.Forms.Label();
             this.cbinput = new System.Windows.Forms.ComboBox();
+            this.btInput = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbIO_Status
@@ -54,9 +55,11 @@
             // lboutput
             // 
             this.lboutput.AutoSize = true;
+            this.lboutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lboutput.ForeColor = System.Drawing.Color.Red;
             this.lboutput.Location = new System.Drawing.Point(443, 77);
             this.lboutput.Name = "lboutput";
-            this.lboutput.Size = new System.Drawing.Size(51, 17);
+            this.lboutput.Size = new System.Drawing.Size(58, 18);
             this.lboutput.TabIndex = 3;
             this.lboutput.Text = "Output";
             this.lboutput.Click += new System.EventHandler(this.label1_Click);
@@ -76,11 +79,24 @@
             this.cbinput.TabIndex = 4;
             this.cbinput.Text = "False";
             // 
+            // btInput
+            // 
+            this.btInput.BackColor = System.Drawing.Color.Red;
+            this.btInput.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btInput.Location = new System.Drawing.Point(198, 141);
+            this.btInput.Name = "btInput";
+            this.btInput.Size = new System.Drawing.Size(86, 27);
+            this.btInput.TabIndex = 5;
+            this.btInput.Text = "Input";
+            this.btInput.UseVisualStyleBackColor = false;
+            this.btInput.Click += new System.EventHandler(this.btInput_Click);
+            // 
             // IOSatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btInput);
             this.Controls.Add(this.cbinput);
             this.Controls.Add(this.lboutput);
             this.Controls.Add(this.tbIO_Status);
@@ -98,6 +114,7 @@
         private System.Windows.Forms.TextBox tbIO_Status;
         private System.Windows.Forms.Label lboutput;
         private System.Windows.Forms.ComboBox cbinput;
+        private System.Windows.Forms.Button btInput;
     }
 }
 

@@ -13,6 +13,10 @@ namespace IOReadViewWinForms
 {
     public partial class IOSatus : Form
     {
+
+        bool bInputButton = false;
+        bool IO_g_ReadIO = false;
+
         public IOSatus()
         {
             InitializeComponent();
@@ -26,7 +30,8 @@ namespace IOReadViewWinForms
         {
             var IOData = Entry.IOReadPlc.MAIN.MainReadIO;
             
-            Entry.IOReadPlc.IO.g_ReadIO.Cyclic = bool.Parse(this.cbinput.Text); 
+            Entry.IOReadPlc.IO.g_ReadIO.Cyclic = bool.Parse(this.cbinput.Text);
+            Entry.IOReadPlc.IO.g_ReadIO.Cyclic = IO_g_ReadIO;
             this.lbIO_Status.Text = IOData.st_ReadIO.AttributeName;
             this.tbIO_Status.Text = IOData.st_ReadIO.Cyclic.ToString();
 
@@ -41,6 +46,24 @@ namespace IOReadViewWinForms
         private void lbIO_Status_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btInput_Click(object sender, EventArgs e)
+        {
+            if(bInputButton)
+            {
+                bInputButton = false;
+                btInput.BackColor = Color.Red;
+                IO_g_ReadIO = false;
+                lboutput.ForeColor = Color.Red;
+            }
+            else
+            {
+                bInputButton = true;
+                btInput.BackColor = Color.Green;
+                IO_g_ReadIO = true;
+                lboutput.ForeColor = Color.Green;
+            }
         }
 
         //void ButtonOk_Click(object sender, EventArgs e)
