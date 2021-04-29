@@ -48,22 +48,49 @@ namespace IOReadViewWinForms
 
         }
 
+
         private void btInput_Click(object sender, EventArgs e)
         {
-            if(bInputButton)
+            //MessageBox.Show(sender.ToString());
+            Button b = (Button)sender;
+            //MessageBox.Show(b.Text.ToString());
+
+            switch (b.Text.ToString())
             {
-                bInputButton = false;
-                btInput.BackColor = Color.Red;
-                IO_g_ReadIO = false;
-                lboutput.ForeColor = Color.Red;
+                case "Input":
+                    IO_g_ReadIO ^= true;
+                    if(IO_g_ReadIO)
+                        btInput1.BackColor = Color.Green;
+                    else
+                        btInput1.BackColor = Color.Red;
+                    break;
+
             }
-            else
-            {
-                bInputButton = true;
-                btInput.BackColor = Color.Green;
-                IO_g_ReadIO = true;
-                lboutput.ForeColor = Color.Green;
-            }
+            //IO_g_ReadIO ^= true;
+            //MessageBox.Show(bInputButton.ToString());
+
+            //Entry.IOReadPlc.IO.g_ReadIO.Cyclic  ^= true;
+            //if (bInputButton)
+            //{
+            //    bInputButton = false;
+            //    btInput1.BackColor = Color.Red;
+            //    IO_g_ReadIO = false;
+            //    lboutput.ForeColor = Color.Red;
+
+            //    Entry.IOReadPlc.IO.g_ReadIO.Cyclic = IO_g_ReadIO;
+            //}
+            //else
+            //{
+            //    bInputButton = true;
+            //    btInput1.BackColor = Color.Green;
+            //    IO_g_ReadIO = true;
+            //    lboutput.ForeColor = Color.Green;
+            //}
+        }
+
+        private void TrBaInput_Scroll(object sender, EventArgs e)
+        {
+            tbTrBaInput.Text = TrBaInput.Value.ToString();
         }
 
         //void ButtonOk_Click(object sender, EventArgs e)
